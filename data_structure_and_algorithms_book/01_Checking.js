@@ -4,9 +4,11 @@ function Checking(amount) {
     this.withdraw = withdraw; // function
     this.toString = toString;  // function
 }
+
 function deposit(amount) {
     this.balance += amount;
 }
+
 function withdraw(amount) {
     if (this.balance < amount) {
         console.log("Insufficient funds");
@@ -15,6 +17,7 @@ function withdraw(amount) {
         this.balance -= amount;
     }
 }
+
 function toString() {
     return "Balance: " + this.balance;
 }

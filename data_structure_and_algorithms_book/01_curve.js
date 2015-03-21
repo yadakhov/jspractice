@@ -1,5 +1,7 @@
 /**
  * Arrays are passed by reference
+ * @param arr
+ * @param amount
  */
 function curve(arr, amount) {
     for (var i = 0; i < arr.length; ++i) {
